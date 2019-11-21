@@ -4,7 +4,7 @@
 
 Apply to the selected frame the required export settings for PWA icons App.
 
-[Install on Figma]()
+[Install on Figma](https://www.figma.com/c/plugin/771341909571444129/PWA-Icon-App-Exports)
 
 ## Usage
 

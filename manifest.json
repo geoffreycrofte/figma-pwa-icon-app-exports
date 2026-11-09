@@ -1,6 +1,20 @@
 {
-  "api": "1.0.0",
   "name": "PWA Icon App Exports",
-  "main": "src/plugin.ts",
-  "id": "771341909571444129"
+  "id": "771341909571444129",
+  "api": "1.0.0",
+  "main": "dist/code.js",
+  "ui": "dist/ui.html",
+  "editorType": ["figma"],
+  "documentAccess": "dynamic-page",
+  "networkAccess": {
+    "allowedDomains": ["none"]
+  },
+  "menu": [
+    { "name": "Open…", "command": "open" },
+    { "separator": true },
+    { "name": "Quick apply: PWA icons", "command": "apply:standard" },
+    { "name": "Quick apply: Maskable icons", "command": "apply:maskable" },
+    { "name": "Quick apply: Apple touch icons", "command": "apply:apple" },
+    { "name": "Quick apply: Favicons", "command": "apply:favicon" }
+  ]
 }

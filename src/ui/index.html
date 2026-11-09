@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PWA Icon App Exports</title>
+    <style>
+      /*__STYLE__*/
+    </style>
+  </head>
+  <body>
+    <div id="app" class="app">
+    <main>
+      <h1 class="app-title" data-i18n="appTitle">PWA Icon App Exports</h1>
+
+      <section id="view-home" class="view" aria-labelledby="home-heading">
+        <h2 id="home-heading" tabindex="-1" data-i18n="homeHeading"></h2>
+        <ul class="actions">
+          <li>
+            <button
+              type="button"
+              class="action"
+              id="btn-generate"
+              aria-labelledby="generate-label"
+              aria-describedby="generate-desc"
+            >
+              <svg class="action-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <rect x="3" y="3" width="7" height="7" rx="1.5" />
+                <rect x="14" y="3" width="7" height="7" rx="1.5" />
+                <rect x="3" y="14" width="7" height="7" rx="1.5" />
+                <path d="M17.5 14v7M14 17.5h7" />
+              </svg>
+              <span class="action-text">
+                <span class="action-label" id="generate-label" data-i18n="generateLabel"></span>
+                <span class="action-desc" id="generate-desc" data-i18n="generateDescription"></span>
+              </span>
+            </button>
+          </li>
+          <li>
+            <button
+              type="button"
+              class="action"
+              id="btn-export"
+              aria-labelledby="export-label"
+              aria-describedby="export-desc"
+            >
+              <svg class="action-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M12 3v12M7 10l5 5 5-5" />
+                <path d="M4 15v4a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-4" />
+              </svg>
+              <span class="action-text">
+                <span class="action-label" id="export-label" data-i18n="exportLabel"></span>
+                <span class="action-desc" id="export-desc" data-i18n="exportDescription"></span>
+              </span>
+            </button>
+          </li>
+        </ul>
+      </section>
+
+      <section id="view-export" class="view" aria-labelledby="export-heading" hidden>
+        <button type="button" class="back" id="btn-back">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15 5l-7 7 7 7" /></svg>
+          <span data-i18n="back"></span>
+        </button>
+        <h2 id="export-heading" tabindex="-1" data-i18n="exportLabel"></h2>
+        <div class="selection" role="status">
+          <p id="selection-summary"></p>
+          <p id="selection-warning" class="warning" hidden>
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M12 3 2 21h20L12 3z" />
+              <path d="M12 10v5M12 18h.01" />
+            </svg>
+            <span id="selection-warning-text"></span>
+          </p>
+        </div>
+
+        <form id="export-form" novalidate>
+          <fieldset aria-describedby="preset-error">
+            <legend data-i18n="presetsLegend"></legend>
+            <ul id="preset-list" class="presets"></ul>
+            <p id="preset-error" class="error" role="alert"></p>
+          </fieldset>
+          <p class="hint" data-i18n="exportHint"></p>
+          <button type="submit" class="primary" data-i18n="applyButton"></button>
+        </form>
+      </section>
+
+      <div class="feedback">
+        <p id="status" class="status" role="status"></p>
+        <p id="alert" class="error" role="alert"></p>
+      </div>
+    </main>
+    <footer class="credits">
+      <p>
+        <span data-i18n="creditPrefix"></span>
+        <a href="https://geoffreycrofte.com" target="_blank" rel="noopener noreferrer"
+          >Geoffrey Crofte<span class="sr-only" data-i18n="newTab"></span
+          ><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M9 7h8v8" /></svg
+        ></a>
+      </p>
+      <div class="lang-switch" role="group" aria-labelledby="lang-label">
+        <span id="lang-label" class="sr-only" data-i18n="languageLabel"></span>
+        <button type="button" data-lang="en" lang="en" aria-pressed="false">English</button>
+        <button type="button" data-lang="fr" lang="fr" aria-pressed="false">Français</button>
+      </div>
+    </footer>
+    </div>
+    <script>
+      /*__SCRIPT__*/
+    </script>
+  </body>
+</html>
